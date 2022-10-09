@@ -1,0 +1,38 @@
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <meta charset="UTF-8" />
+    <meta http-equiv="X-UA-Compatible" content="IE=edge" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <title>project-one</title>
+    <link rel="stylesheet" href="./styles.css" />
+  </head>
+  <body>
+    <div class="main_container">
+      <header>
+        <img src="profile-pic (2).png" alt="Profile Picture" />
+        <div class="des">
+          <h2>Rahul Panchal</h2>
+          <hr />
+          <p class="description">
+            Lorem, ipsum dolor sit amet consectetur adipisicing elit. Totam
+            cupiditate, vitae voluptate velit libero officiis.
+          </p>
+        </div>
+        <div ng-app="myApp" ng-controller="myCtrl">
+          <button
+            class="btn btn-primary"
+            id="share_screen_button"
+            ng-click="toggle()"
+          >
+            <i
+              ng-class="{'fas fa-desktop':which_class,'far fa-window-close':!which_class}"
+            ></i>
+          </button>
+        </div>
+      </header>
+    </div>
+
+    <script src="./script.js"></script>
+  </body>
+</html>
